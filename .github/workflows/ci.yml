@@ -27,20 +27,15 @@ jobs:
           node-version: "20"
           # cache: "pnpm"  # DISABLED
 
-      # Step 4: Clean pnpm store (fix for cache corruption)
-      - name: Clean pnpm store
-        run: pnpm store prune || true
-
-      # Step 5: Install dependencies
+      # Step 4: Install dependencies
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      # Step 6: Run lint and type-check
+      # Step 5: Run lint and type-check
       - name: Lint & Type Check
         run: |
           pnpm run lint
           pnpm run type-check
-
-      # Step 7: Build the application
+      # Step 6: Build the application
       - name: Build application
         run: pnpm run build
