@@ -36,6 +36,7 @@ jobs:
         run: |
           pnpm run lint
           pnpm run type-check
+
       # Step 6: Build the application
       - name: Build application
         run: pnpm run build
