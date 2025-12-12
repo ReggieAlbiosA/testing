@@ -20,12 +20,12 @@ jobs:
         with:
           version: 9
 
-      # Step 3: Setup Node.js with pnpm caching
+      # Step 3: Setup Node.js (cache disabled)
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "pnpm"
+          # cache: "pnpm"  # DISABLED
 
       # Step 4: Clean pnpm store (fix for cache corruption)
       - name: Clean pnpm store
