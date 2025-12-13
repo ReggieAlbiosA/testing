@@ -8,6 +8,7 @@ import TodoList from "./components/TodoList";
 import Stopwatch from "./components/Stopwatch";
 import BmiCalculator from "./components/BmiCalculator";
 import TicTacToe from "./components/TicTacToe";
+import ColorConverter from "./components/ColorConverter";
 
 export default function Page() {
   const [num1, setNum1] = useState<number>(0);
@@ -65,6 +66,8 @@ export default function Page() {
       <BmiCalculator />
 
       <TicTacToe />
+
+      <ColorConverter />
     </main>
   );
 }
