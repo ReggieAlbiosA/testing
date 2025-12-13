@@ -7,6 +7,7 @@ import Calendar from "./components/Calendar";
 import TodoList from "./components/TodoList";
 import Stopwatch from "./components/Stopwatch";
 import BmiCalculator from "./components/BmiCalculator";
+import TicTacToe from "./components/TicTacToe";
 
 export default function Page() {
   const [num1, setNum1] = useState<number>(0);
@@ -62,6 +63,8 @@ export default function Page() {
       <Stopwatch />
 
       <BmiCalculator />
+
+      <TicTacToe />
     </main>
   );
 }
