@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import WordCounter from "./components/WordCounter";
 import Calendar from "./components/Calendar";
 import TodoList from "./components/TodoList";
+import Stopwatch from "./components/Stopwatch";
 
 export default function Page() {
   const [num1, setNum1] = useState<number>(0);
@@ -56,6 +57,8 @@ export default function Page() {
       <Calendar />
 
       <TodoList />
+
+      <Stopwatch />
     </main>
   );
 }
