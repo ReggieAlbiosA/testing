@@ -29,14 +29,13 @@ jobs:
 
       # Step 4: Install dependencies
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       # Step 5: Run lint and type-check
       - name: Lint & Type Check
         run: |
           pnpm run lint
           pnpm run type-check
-
       # Step 6: Build the application
       - name: Build application
         run: pnpm run build
