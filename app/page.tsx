@@ -10,6 +10,7 @@ import BmiCalculator from "./components/BmiCalculator";
 import TicTacToe from "./components/TicTacToe";
 import ColorConverter from "./components/ColorConverter";
 import PasswordGenerator from "./components/PasswordGenerator";
+import JsonFormatter from "./components/JsonFormatter";
 
 export default function Page() {
   const [num1, setNum1] = useState<number>(0);
@@ -71,6 +72,8 @@ export default function Page() {
       <ColorConverter />
 
       <PasswordGenerator />
+
+      <JsonFormatter />
     </main>
   );
 }
