@@ -11,6 +11,7 @@ import TicTacToe from "./components/TicTacToe";
 import ColorConverter from "./components/ColorConverter";
 import PasswordGenerator from "./components/PasswordGenerator";
 import JsonFormatter from "./components/JsonFormatter";
+import QrCodeGenerator from "./components/QrCodeGenerator";
 
 export default function Page() {
   const [num1, setNum1] = useState<number>(0);
@@ -74,6 +75,8 @@ export default function Page() {
       <PasswordGenerator />
 
       <JsonFormatter />
+
+      <QrCodeGenerator />
     </main>
   );
 }
